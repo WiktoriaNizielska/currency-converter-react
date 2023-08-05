@@ -1,0 +1,29 @@
+.form__labelText {
+    display: inline-block;
+    width: 100px;
+}
+
+.form__field {
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 1px;
+    color: rgb(53, 54, 54);
+}
+
+.form__legend {
+    background-color: rgba(97, 109, 143, 0.854);
+    padding: 3px 10px;
+    border-radius: 1px;
+    color: aliceblue;
+}
+
+.form__fieldset {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgba(252, 252, 252, 0.514);
+    margin: 20px auto;
+    box-shadow: 2px 8px 5px -9px rgba(78, 78, 83, 1);
+    border-radius: px;
+}
