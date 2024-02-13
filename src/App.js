@@ -1,13 +1,31 @@
+import { useState } from "react";
 import Form from "./Form";
-import Button from "./button";
 import Result from "./Result";
+import currencies from "./currencies";
 
 function App() {
+  const [result, setResult] = useState();
+
+  const calculateResult = (amount, currency) => {
+    const rate = currencies
+      .find(({ symbol }) => symbol === currency)
+      .rate;
+
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount / rate,
+      currency,
+    });
+  };
+
+
   return (
     <main>
-      <Form />
-      <Button />
-      <Result />
+      <Form
+        calculateResult={calculateResult}
+        result={result}
+      />
+      <Result result={result} />
     </main>
   );
 }

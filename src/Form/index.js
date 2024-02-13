@@ -2,13 +2,13 @@ import "./style.css";
 import { useState } from "react";
 import currencies from "../currencies";
 
-const Form = () => {
-  const [currency, setCurrency] = useState("");
-  const onSelectChange = ({ target }) => setCurrency(target.value);
+const Form = ({ calculateResult, result }) => {
+  const [currency, setCurrency] = useState(currencies[0].symbol);
+  const [amount, setAmount] = useState("");
 
   const onFormsubmit = (event) => {
     event.preventDefault();
-    console.log(`Wysłano: ${currency}`);
+    calculateResult(currency, amount);
   };
 
   return (
@@ -24,12 +24,12 @@ const Form = () => {
             </span>
             <select
               value={currency}
-              onChange={onSelectChange}
+              onChange={({ target }) => setCurrency(target.value)}
               className=" form__field"
             >
               {currencies.map((currency => (
                 <option
-                  value={currencies.currency}
+                  value={currency.currency}
                   key={currency.short}
                 >
                   {currency.symbol} - {currency.currency}
@@ -44,6 +44,8 @@ const Form = () => {
               Kwota w złotówkach:
             </span>
             <input
+              value={amount}
+              onChange={({ target }) => setAmount(target.value)}
               className=" form__field"
               type="number"
               name="amount"
@@ -52,8 +54,12 @@ const Form = () => {
           </label>
         </p>
       </fieldset>
+      <p>
+        <button className="button">Przelicz</button>
+      </p>
     </form>
-  );
+ );
+
 }
 
 export default Form;
