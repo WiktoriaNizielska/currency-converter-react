@@ -27,3 +27,17 @@
     box-shadow: 2px 8px 5px -9px rgba(78, 78, 83, 1);
     border-radius: px;
 }
+
+.form__button {
+    background-color: rgb(166, 177, 211);
+    border: none;
+    color: rgb(53, 54, 54);
+    width: 100%;
+    padding: 10px;
+    border-radius: 1px;
+
+}
+
+.form__button:hover {
+    background-color: rgb(139, 148, 176);
+}
