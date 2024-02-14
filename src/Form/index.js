@@ -2,13 +2,13 @@ import "./style.css";
 import { useState } from "react";
 import currencies from "../currencies";
 
-const Form = ({ calculateResult, result }) => {
+const Form = ({ calculateResult }) => {
   const [currency, setCurrency] = useState(currencies[0].symbol);
   const [amount, setAmount] = useState("");
 
   const onFormsubmit = (event) => {
     event.preventDefault();
-    calculateResult(currency, amount);
+    calculateResult(amount, currency);
   };
 
   return (
@@ -55,10 +55,10 @@ const Form = ({ calculateResult, result }) => {
         </p>
       </fieldset>
       <p>
-        <button className="button">Przelicz</button>
+        <button className="form__button">Przelicz</button>
       </p>
     </form>
- );
+  );
 
 }
 
