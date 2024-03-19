@@ -1,4 +1,43 @@
-# Getting Started with Create React App
+# Currency converter
+
+## Table of contents
+1. [Demo](#demo)
+1. [Description](#description)
+1. [Features](#features)
+1. [How to use](#how-to-use)
+1. [Technologies](#technologies)
+1. [Available Scripts](#available-scripts)
+
+## Demo
+https://wiktorianizielska.github.io/currency-converter-react/
+
+## Description
+Currency converter is project created in React. It is a simple calculator which convert zloty to other currencies. You can easily type the amount of PLN and it return the result in currency you choosed.
+
+## Features
+- selection of currencies: USD, EUR, SEK, CHF
+- convertion PLN up to amount of 10000000000000000000
+- clear result containing: amount of PLN and result in currency you've choosen
+
+## How to use
+1. Choose a currency from select window.
+1. Type the amount of money you want to exchange
+1. Click the button
+1. See the result
+
+
+## Technologies
+- React.js: useState, controlled components, JSX
+- Create React App
+- Webpack
+- Babel
+- HTML
+- BEMconvention
+- CSS: normalize.css, transition
+- JavaScript: arrays, objects, immutability, JS modules, 
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -13,11 +52,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
