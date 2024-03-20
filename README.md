@@ -1,5 +1,7 @@
 # Currency converter
 
+![converter.gif](https://i.postimg.cc/YqG6MR8W/converter.gif)
+
 ## Table of contents
 1. [Demo](#demo)
 1. [Description](#description)
@@ -18,28 +20,28 @@ Currency converter is project created in React. It is a simple calculator which 
 - selection of currencies: USD, EUR, SEK, CHF
 - convertion PLN up to amount of 10000000000000000000
 - clear result containing: amount of PLN and result in currency you've choosen
+- interactive button
 
 ## How to use
 1. Choose a currency from select window.
-1. Type the amount of money you want to exchange
-1. Click the button
-1. See the result
-
+![currency.gif](https://i.postimg.cc/ydRTnT59/currency.gif)
+1. Type the amount of money you want to exchange.
+![amount.gif](https://i.postimg.cc/Yq0vHSrD/amount.gif)
+1. Click the button "Przelicz".
+![sumup.gif](https://i.postimg.cc/zf8L4FVK/sumup.gif)
+1. See the result.
+![result.gif](https://i.postimg.cc/Y2zrjLqq/result.gif)
 
 ## Technologies
-- React.js: useState, controlled components, JSX
-- Create React App
-- Webpack
-- Babel
-- HTML
-- BEMconvention
-- CSS: normalize.css, transition
-- JavaScript: arrays, objects, immutability, JS modules, 
+- **React.js**: useState, controlled components, JSX
+- **Create React App**
+- **Webpack**
+- **Babel**
+- **HTML**
+- **BEMconvention**
+- **CSS**: normalize.css, transition
+- **JavaScript**: arrays, objects, immutability, JS modules
 
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
