@@ -29,7 +29,7 @@ const Form = ({ calculateResult }) => {
             >
               {currencies.map((currency => (
                 <option
-                  value={currency.currency}
+                  value={currency.symbol}
                   key={currency.symbol}
                 >
                   {currency.symbol} - {currency.currency}
