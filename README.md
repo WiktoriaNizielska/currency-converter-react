@@ -1,6 +1,6 @@
 # Currency converter
 
-![converter.gif](https://i.postimg.cc/YqG6MR8W/converter.gif)
+![connerter.gif](https://i.postimg.cc/fydzmk2x/connerter.gif)
 
 ## Table of contents
 1. [Demo](#demo)
@@ -21,6 +21,7 @@ Currency converter is project created in React. It is a simple calculator which 
 - convertion PLN up to amount of 10000000000000000000
 - clear result containing: amount of PLN and result in currency you've choosen
 - interactive button
+- current date and time
 
 ## How to use
 1. Choose a currency from select window.
@@ -33,14 +34,15 @@ Currency converter is project created in React. It is a simple calculator which 
 ![result.gif](https://i.postimg.cc/Y2zrjLqq/result.gif)
 
 ## Technologies
-- **React.js**: useState, controlled components, JSX
+- **React.js**: controlled components, JSX
+- **React Hooks**: useState, useEffect
 - **Create React App**
 - **Webpack**
 - **Babel**
 - **HTML**
 - **BEMconvention**
-- **CSS**: normalize.css, transition
-- **JavaScript**: arrays, objects, immutability, JS modules
+- **CSS**: normalize.css, transition, media queries
+- **JavaScript**: arrays, objects, immutability, JS modules, setInterval
 
 
 ## Available Scripts
