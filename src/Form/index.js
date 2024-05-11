@@ -1,7 +1,7 @@
 import { useState } from "react";
 import currencies from "../currencies";
 import Clock from "../Clock";
-import { Fieldset, Legend, LabelText, Select, Input, Button } from "./styled";
+import { Fieldset, Legend, LabelText, Select, Button } from "./styled";
 
 const Form = ({ calculateResult }) => {
   const [currency, setCurrency] = useState(currencies[0].symbol);
@@ -44,7 +44,7 @@ const Form = ({ calculateResult }) => {
             <LabelText>
               Kwota w złotówkach:
             </LabelText>
-            <Input
+            <Select as="input"
               value={amount}
               onChange={({ target }) => setAmount(target.value)}
               type="number"

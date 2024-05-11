@@ -32,17 +32,6 @@ export const Select = styled.select`
     background-color: rgba(245, 242, 242, 0.468);
 `;
 
-export const Input = styled.input`
-    max-width: 400px;
-    padding: 10px;
-    margin: auto 5px 15px;
-    width: 100%;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 1px;
-    color: rgb(53, 54, 54);
-    background-color: rgba(245, 242, 242, 0.468);
-`;
-
 export const Button = styled.button`
     background-color: rgb(166, 177, 211);
     border: none;
