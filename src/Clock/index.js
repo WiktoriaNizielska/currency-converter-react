@@ -12,7 +12,7 @@ const Clock = () => {
     return () => {
       clearInterval(intervalId);
     };
-  },[]);
+  }, []);
 
   return (
     <ClockContainer>

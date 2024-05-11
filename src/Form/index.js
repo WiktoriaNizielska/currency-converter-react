@@ -1,7 +1,7 @@
-import "./style.css";
 import { useState } from "react";
 import currencies from "../currencies";
 import Clock from "../Clock";
+import { Fieldset, Legend, LabelText, Select, Input, Button } from "./styled";
 
 const Form = ({ calculateResult }) => {
   const [currency, setCurrency] = useState(currencies[0].symbol);
@@ -13,21 +13,20 @@ const Form = ({ calculateResult }) => {
   };
 
   return (
-    <form className=" form" onSubmit={onFormsubmit}>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">
+    <form onSubmit={onFormsubmit}>
+      <Fieldset>
+        <Legend>
           Przelicznik walut
-        </legend>
+        </Legend>
         <Clock />
         <p>
           <label>
-            <span className="form__labelText">
+            <LabelText>
               Waluta:
-            </span>
-            <select
+            </LabelText>
+            <Select
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
-              className=" form__field"
             >
               {currencies.map((currency => (
                 <option
@@ -37,27 +36,26 @@ const Form = ({ calculateResult }) => {
                   {currency.symbol} - {currency.currency}
                 </option>
               )))}
-            </select>
+            </Select>
           </label>
         </p>
         <p>
           <label>
-            <span className="form__labelText">
+            <LabelText>
               Kwota w złotówkach:
-            </span>
-            <input
+            </LabelText>
+            <Input
               value={amount}
               onChange={({ target }) => setAmount(target.value)}
-              className=" form__field"
               type="number"
               name="amount"
               min="0.01"
               step="0.01" />
           </label>
         </p>
-      </fieldset>
+      </Fieldset>
       <p>
-        <button className="form__button">Przelicz</button>
+        <Button>Przelicz</Button>
       </p>
     </form>
   );
