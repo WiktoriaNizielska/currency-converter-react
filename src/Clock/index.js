@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./style.css";
+import { ClockContainer } from "./styled";
 
 const Clock = () => {
   const [date, setDate] = useState(new Date());
@@ -12,10 +12,10 @@ const Clock = () => {
     return () => {
       clearInterval(intervalId);
     };
-  });
+  },[]);
 
   return (
-    <p className="clock">
+    <ClockContainer>
       Dzisiaj jest&nbsp;
       {date.toLocaleString(undefined,
         {
@@ -31,7 +31,7 @@ const Clock = () => {
           second: "numeric"
         }
       )}
-    </p>
+    </ClockContainer>
   )
 };
 
