@@ -4,7 +4,7 @@ export const ClockContainer = styled.p`
     text-align: end;
     font-family: "Roboto Mono", monospace;
     font-size: 11px;
-    color: rgb(109, 108, 104);
+    color: ${({ theme }) => theme.color.grey};
     margin: 5px 5px 30px;
 
     @media(max-width:767px) {

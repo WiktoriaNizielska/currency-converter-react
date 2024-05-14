@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Fieldset = styled.fieldset`
-    border: 1px solid rgb(204, 204, 204);
-    background-color: hsla(0, 0%, 99%, 0.4);
+    border: 1px solid ${({ theme }) => theme.color.silver};
+    background-color: ${({ theme }) => theme.color.alabaster};
     margin: 20px auto;
-    box-shadow: 2px 8px 5px -9px rgba(78, 78, 83, 1);
+    box-shadow: 2px 8px 5px -9px ${({ theme }) => theme.color.abbey};
     border-radius: 1px;
 `;
 
 export const Legend = styled.legend`
-    background-color: rgba(97, 109, 143, 0.854);
+    background-color: ${({ theme }) => theme.color.lynch};
     padding: 3px 10px;
     border-radius: 1px;
-    color: rgb(240, 248, 255);
+    color: ${({ theme }) => theme.color.aliceBlue};
 `;
 
 export const LabelText = styled.span`
@@ -26,26 +26,26 @@ export const Select = styled.select`
     padding: 10px;
     margin: auto 5px 15px;
     width: 100%;
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid ${({ theme }) => theme.color.silver};
     border-radius: 1px;
     color: rgb(53, 54, 54);
-    background-color: rgba(245, 242, 242, 0.468);
+    background-color: ${({ theme }) => theme.color.alabaster};
 `;
 
 export const Button = styled.button`
-    background-color: rgb(166, 177, 211);
+    background-color: ${({ theme }) => theme.color.wistful};
     border: none;
-    color: rgb(53, 54, 54);
+    color: ${({ theme }) => theme.color.capeCod};
     width: 100%;
     padding: 10px;
     border-radius: 1px;
     transition: 0.75s;
 
     &:hover{
-        background-color: rgb(139, 148, 176);
+        filter:brightness(80%);
     }
 
     &:active{
-        background-color: rgb(123, 132, 157);
+        filter:brightness(80%);
     }
 `;
