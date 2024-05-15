@@ -1,6 +1,6 @@
 # Currency converter
 
-![connerter.gif](https://i.postimg.cc/fydzmk2x/connerter.gif)
+![connerter.gif](https://i.postimg.cc/kGhQ5tLm/connerter.gif)
 
 ## Table of contents
 1. [Demo](#demo)
