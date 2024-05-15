@@ -25,7 +25,7 @@ Currency converter is project created in React. It is a simple calculator which 
 
 ## How to use
 1. Choose a currency from select window.
-![currency.gif](https://i.postimg.cc/ydRTnT59/currency.gif)
+![currency.gif](https://i.postimg.cc/ZqDRQtBw/currency.gif)
 1. Type the amount of money you want to exchange.
 ![amount.gif](https://i.postimg.cc/Yq0vHSrD/amount.gif)
 1. Click the button "Przelicz".
