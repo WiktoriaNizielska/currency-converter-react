@@ -36,11 +36,13 @@ Currency converter is project created in React. It is a simple calculator which 
 ## Technologies
 - **React.js**: controlled components, JSX
 - **React Hooks**: useState, useEffect
+- **Custom Hooks**
+- **styled-components**
 - **Create React App**
+- **npm**
 - **Webpack**
 - **Babel**
 - **HTML**
-- **BEMconvention**
 - **CSS**: normalize.css, transition, media queries
 - **JavaScript**: arrays, objects, immutability, JS modules, setInterval
 
