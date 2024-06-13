@@ -1,10 +1,9 @@
 import { useState } from "react";
-import currencies from "../currencies";
 import Clock from "../Clock";
 import { Fieldset, Legend, LabelText, Select, Button } from "./styled";
 
-const Form = ({ calculateResult }) => {
-  const [currency, setCurrency] = useState(currencies[0].symbol);
+const Form = ({ calculateResult, ratesData }) => {
+  const [currency, setCurrency] = useState("");
   const [amount, setAmount] = useState("");
 
   const onFormsubmit = (event) => {
@@ -28,14 +27,11 @@ const Form = ({ calculateResult }) => {
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
-              {currencies.map((currency => (
-                <option
-                  value={currency.symbol}
-                  key={currency.symbol}
-                >
-                  {currency.symbol} - {currency.currency}
+              {Object.keys(ratesData || {}).map((currency) => (
+                <option value={ratesData[currency]} key={currency}>
+                  {currency}
                 </option>
-              )))}
+              ))}
             </Select>
           </label>
         </p>
