@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Clock from "../Clock";
-import { Fieldset, Legend, LabelText, Select, Button } from "./styled";
+import { Fieldset, Legend, LabelText, Select, Button, Loading, Error, Container } from "./styled";
+
 
 const Form = ({ calculateResult, ratesData }) => {
-  const [currency, setCurrency] = useState("");
+  const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
 
   const onFormsubmit = (event) => {
@@ -18,7 +19,7 @@ const Form = ({ calculateResult, ratesData }) => {
           Przelicznik walut
         </Legend>
         <Clock />
-        <p>
+        {ratesData.status === "loading" ? (<Loading>Ładowanie...</Loading>) : ratesData.status === "error" ? (<Error>Błąd połącznia</Error>) : (<Container><p>
           <label>
             <LabelText>
               Waluta:
@@ -35,27 +36,26 @@ const Form = ({ calculateResult, ratesData }) => {
             </Select>
           </label>
         </p>
-        <p>
-          <label>
-            <LabelText>
-              Kwota w złotówkach:
-            </LabelText>
-            <Select as="input"
-              value={amount}
-              onChange={({ target }) => setAmount(target.value)}
-              type="number"
-              name="amount"
-              min="0.01"
-              step="0.01" />
-          </label>
-        </p>
+          <p>
+            <label>
+              <LabelText>
+                Kwota w złotówkach:
+              </LabelText>
+              <Select as="input"
+                value={amount}
+                onChange={({ target }) => setAmount(target.value)}
+                type="number"
+                name="amount"
+                min="0.01"
+                step="0.01" />
+            </label>
+          </p></Container>)}
       </Fieldset>
       <p>
         <Button>Przelicz</Button>
       </p>
     </form>
   );
-
 }
 
 export default Form;

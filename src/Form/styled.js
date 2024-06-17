@@ -49,3 +49,14 @@ export const Button = styled.button`
         filter:brightness(80%);
     }
 `;
+
+export const Loading = styled.p`
+    margin: 10px 10px;
+`;
+
+export const Error= styled.p`
+    margin: 10px 10px;
+
+`;export const Container = styled.div`
+margin: 10px 10px;
+`;
