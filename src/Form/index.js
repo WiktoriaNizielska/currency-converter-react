@@ -2,7 +2,6 @@ import { useState } from "react";
 import Clock from "../Clock";
 import { Fieldset, Legend, LabelText, Select, Button, Loading, Error, Container } from "./styled";
 
-
 const Form = ({ calculateResult, ratesData }) => {
   const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
@@ -28,7 +27,7 @@ const Form = ({ calculateResult, ratesData }) => {
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
-              {Object.keys(ratesData || {}).map((currency) => (
+              {Object.keys(ratesData.data || {}).map((currency) => (
                 <option value={currency} key={currency}>
                   {currency}
                 </option>

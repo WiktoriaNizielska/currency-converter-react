@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const useRatesData = () => {
   const [ratesData, setRatesData] = useState({
-    data: null,
+    data: [],
     status: "loading",
     date: null,
   });
@@ -17,7 +17,7 @@ export const useRatesData = () => {
         setRatesData({
           data: response.data.data,
           status: "downloaded",
-          date: response.data.meta.last_updated_at,
+          date: response.data.meta.last_updated_a,
         });
       } catch (error) {
         setRatesData({
@@ -25,7 +25,7 @@ export const useRatesData = () => {
         });
       }
     };
-    fetchRates();
+    setTimeout(fetchRates, 4000);
   }, []);
   return ratesData;
 };

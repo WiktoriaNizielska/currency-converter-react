@@ -4,7 +4,6 @@ import Result from "./Result";
 import Clock from "./Clock";
 import { useRatesData } from "./useRatesData";
 
-
 function App() {
   const ratesData = useRatesData();
   const [result, setResult] = useState(null);
@@ -25,7 +24,7 @@ function App() {
         Clock={Clock}
         calculateResult={calculateResult}
         result={result}
-        ratesData={ratesData.data}
+        ratesData={ratesData}
       />
       <Result
         result={result}
