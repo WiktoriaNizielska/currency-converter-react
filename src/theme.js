@@ -8,5 +8,6 @@ export const theme = {
     aliceBlue: "#f0f8ff",
     wistful: "#a6b1d3",
     capeCod: "#353636",
+    blueHaze: "#CFD0E2",
   },
 };
