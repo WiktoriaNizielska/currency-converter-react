@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Clock from "../Clock";
-import { Fieldset, Legend, LabelText, Select, Button, Container } from "./styled";
+import { Fieldset, Legend, LabelText, Select, Button, } from "./styled";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
 
@@ -24,7 +24,7 @@ const Form = ({ calculateResult, ratesData }) => {
           <Loading />
           : ratesData.status === "error" ?
             <Error />
-            : (<Container>
+            : (<>
               <p>
                 <label>
                   <LabelText>
@@ -56,7 +56,7 @@ const Form = ({ calculateResult, ratesData }) => {
                     step="0.01" />
                 </label>
               </p>
-            </Container>)}
+            </>)}
       </Fieldset>
       <p>
         <Button>Przelicz</Button>

@@ -49,7 +49,3 @@ export const Button = styled.button`
         filter:brightness(80%);
     }
 `;
-
-export const Container = styled.div`
-    margin: 10px 10px;
-`;
