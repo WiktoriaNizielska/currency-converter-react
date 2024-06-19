@@ -50,10 +50,6 @@ export const Button = styled.button`
     }
 `;
 
-export const Error = styled.p`
-    margin: 10px 10px;
-`;
-
 export const Container = styled.div`
     margin: 10px 10px;
 `;

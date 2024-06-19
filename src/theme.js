@@ -9,5 +9,6 @@ export const theme = {
     wistful: "#a6b1d3",
     capeCod: "#353636",
     blueHaze: "#CFD0E2",
+    red: "#933E4E",
   },
 };

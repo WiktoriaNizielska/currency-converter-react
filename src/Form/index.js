@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Clock from "../Clock";
-import { Fieldset, Legend, LabelText, Select, Button, Error, Container } from "./styled";
+import { Fieldset, Legend, LabelText, Select, Button, Container } from "./styled";
 import { Loading } from "./Loading";
+import { Error } from "./Error";
 
 const Form = ({ calculateResult, ratesData }) => {
   const [currency, setCurrency] = useState("EUR");
@@ -22,7 +23,7 @@ const Form = ({ calculateResult, ratesData }) => {
         {ratesData.status === "loading" ?
           <Loading />
           : ratesData.status === "error" ?
-            (<Error>Wystąpił błąd. Sprawdź połącenie z intrnetem.</Error>)
+            <Error />
             : (<Container>
               <p>
                 <label>
