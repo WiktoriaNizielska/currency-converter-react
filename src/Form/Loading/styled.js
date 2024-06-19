@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const LoadingContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
+    align-items: center; 
 `;
 
 export const AnimationContainer = styled.div`
@@ -12,6 +11,7 @@ export const AnimationContainer = styled.div`
     border-radius: 20%;
     height: 80px;
     width: 80px;
+    margin:15px;
     animation-name: rotate;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -80,4 +80,8 @@ export const LoadingText = styled.p`
           color: ${({ theme }) => theme.color.abbey};
         }
     } 
+        
+    @media(max-width:767px) {
+        font-size: 15px;
+    }
 `;
