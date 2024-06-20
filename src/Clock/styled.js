@@ -6,6 +6,7 @@ export const ClockContainer = styled.p`
     font-size: 11px;
     color: ${({ theme }) => theme.color.lynch};
     margin: 5px 5px 30px;
+    padding-bottom: 10px;
 
     @media(max-width:767px) {
         margin: 12px 5px 5px;

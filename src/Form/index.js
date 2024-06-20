@@ -68,14 +68,14 @@ const Form = ({ calculateResult, ratesData }) => {
                     step="0.01" />
                 </label>
               </p>
+              <Button>Przelicz</Button>
               <ExchangeDate>
                 Kursy walut aktualne na dzień: {getExchangeDate(ratesData)}
               </ExchangeDate>
+
             </>)}
       </Fieldset>
-      <p>
-        <Button>Przelicz</Button>
-      </p>
+
     </form>
   );
 }
