@@ -8,7 +8,7 @@ export const ClockContainer = styled.p`
     margin: 5px 5px 30px;
     padding-bottom: 10px;
 
-    @media(max-width:767px) {
+    @media(max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin: 12px 5px 5px;
         font-size: 10px;
     }

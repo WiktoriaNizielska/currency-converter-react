@@ -11,4 +11,7 @@ export const theme = {
     blueHaze: "#CFD0E2",
     red: "#933E4E",
   },
+  breakpoint: {
+    mobileMax: 767,
+  },
 };

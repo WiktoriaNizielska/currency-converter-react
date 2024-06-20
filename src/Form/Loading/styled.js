@@ -81,7 +81,7 @@ export const LoadingText = styled.p`
         }
     } 
         
-    @media(max-width:767px) {
+    @media(max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 15px;
     }
 `;

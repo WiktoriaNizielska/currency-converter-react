@@ -7,7 +7,7 @@ export const ErrorText = styled.div`
     border-radius: 5px;
     color: ${({ theme }) => theme.color.grey};    
 
-    @media(max-width:767px) {
+    @media(max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 15px;
     }
 `;
