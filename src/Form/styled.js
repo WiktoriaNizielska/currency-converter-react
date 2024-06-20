@@ -39,7 +39,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.capeCod};
     width: 100%;
     padding: 10px;
-    margin: 10px 0  auto;
+    margin: 15px 0  auto;
     border-radius: 4px;
     transition: 0.75s;
 
