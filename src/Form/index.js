@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Clock from "../Clock";
-import { Fieldset, Legend, LabelText, Select, Button, } from "./styled";
+import { Fieldset, Legend, LabelText, Select, Button, ExchangeDate } from "./styled";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
 
@@ -11,6 +11,18 @@ const Form = ({ calculateResult, ratesData }) => {
   const onFormsubmit = (event) => {
     event.preventDefault();
     calculateResult(amount, currency);
+  };
+
+  const getExchangeDate = (ratesData) => {
+    if (ratesData.status === "downloaded") {
+      const exchangeDate = new Date(ratesData.date).toLocaleString(undefined,
+        {
+          year: "numeric",
+          month: "numeric",
+          day: "numeric"
+        });
+      return exchangeDate;
+    };
   };
 
   return (
@@ -56,6 +68,9 @@ const Form = ({ calculateResult, ratesData }) => {
                     step="0.01" />
                 </label>
               </p>
+              <ExchangeDate>
+                Kursy walut aktualne na dzień: {getExchangeDate(ratesData)}
+              </ExchangeDate>
             </>)}
       </Fieldset>
       <p>

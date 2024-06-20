@@ -17,7 +17,7 @@ export const useRatesData = () => {
         setRatesData({
           data: response.data.data,
           status: "downloaded",
-          date: response.data.meta.last_updated_a,
+          date: response.data.meta.last_updated_at,
         });
       } catch (error) {
         setRatesData({

@@ -49,3 +49,10 @@ export const Button = styled.button`
         filter:brightness(80%);
     }
 `;
+
+export const ExchangeDate = styled.p`
+    color: ${({ theme }) => theme.color.lynch};
+    margin: 10px;
+    font-size: 13px;
+    text-align: center;
+`;
