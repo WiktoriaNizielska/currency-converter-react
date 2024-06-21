@@ -1,6 +1,6 @@
 # Currency converter
 
-![connerter.gif](https://i.postimg.cc/kGhQ5tLm/connerter.gif)
+![converter.gif](https://i.postimg.cc/wxW2KdRK/converter.gif)
 
 ## Table of contents
 1. [Demo](#demo)
@@ -14,24 +14,35 @@
 https://wiktorianizielska.github.io/currency-converter-react/
 
 ## Description
-Currency converter is project created in React. It is a simple calculator which convert zloty to other currencies. You can easily type the amount of PLN and it return the result in currency you choosed.
+Currency converter is project created in React. It is a simple calculator which convert zloty to other currencies. It downloads current currency rates from API. You can easily type the amount of PLN and it return the result in currency you choosed.
 
 ## Features
-- selection of currencies: USD, EUR, SEK, CHF
+- selection of many currencies all over the world
 - convertion PLN up to amount of 10000000000000000000
 - clear result containing: amount of PLN and result in currency you've choosen
 - interactive button
 - current date and time
+- current exchange rate date
+- responsive app design
+- animated loading 
+- error handling: when error occur animated message is shown
+
+![loading.gif](https://i.postimg.cc/s2wQB3rs/loading.gif)
+
+![error1.gif](https://i.postimg.cc/GtyShcfm/error1.gif)
 
 ## How to use
 1. Choose a currency from select window.
-![currency.gif](https://i.postimg.cc/ZqDRQtBw/currency.gif)
+![currencies.gif](https://i.postimg.cc/B6wXZNGg/currencies.gif)
+
 1. Type the amount of money you want to exchange.
-![amount.gif](https://i.postimg.cc/Yq0vHSrD/amount.gif)
+![amount.gif](https://i.postimg.cc/W1FcqvJg/amount.gif)
+
 1. Click the button "Przelicz".
-![sumup.gif](https://i.postimg.cc/zf8L4FVK/sumup.gif)
+![count.gif](https://i.postimg.cc/d3tzsPY7/count.gif)
+ 
 1. See the result.
-![result.gif](https://i.postimg.cc/Y2zrjLqq/result.gif)
+![result.gif](https://i.postimg.cc/cHdzhy6D/result.gif)
 
 ## Technologies
 - **React.js**: controlled components, JSX
@@ -43,8 +54,11 @@ Currency converter is project created in React. It is a simple calculator which 
 - **Webpack**
 - **Babel**
 - **HTML**
-- **CSS**: normalize.css, transition, media queries
-- **JavaScript**: arrays, objects, immutability, JS modules, setInterval
+- **CSS**: normalize.css, alternative box model, flex, transition, media queries, animation (keyframes)
+- **JavaScript**: arrays, objects, arrow functions, immutability, JS modules, setInterval
+- **JS Async**: asynchronous functions, promises, async/await
+- **Axios** 
+- error handling: try/catch
 
 
 ## Available Scripts
