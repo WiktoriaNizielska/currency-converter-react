@@ -12,7 +12,6 @@ export const useRatesData = () => {
     const fetchRates = async () => {
       try {
         const response = await axios.get("https://api.currencyapi.com/v3/latest?apikey=cur_live_QSrOjPd0zX9dGuBWVdLavb7aJXhOP9qivsKCW9DH&currencies=&base_currency=PLN");
-        console.log(response.data);
 
         setRatesData({
           data: response.data.data,
