@@ -26,9 +26,7 @@ function App() {
         result={result}
         ratesData={ratesData}
       />
-      <Result
-        result={result}
-      />
+      <Result result={result} />
     </main>
   );
 }
